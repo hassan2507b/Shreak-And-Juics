@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrek-Juices</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <style>
+        /* ABOUT STORY SECTION */
+    .about-section {
+      padding: 60px 15px;
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-weight: 700;
+      margin-bottom: 30px;
+      font-size: 50px;
+      
+    }
+
+    .about-section p {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-family:monospace ;
+    }
+
+    /* TEAM SECTION */
+    .team-member img {
+       border-radius: 50%; /* normal circular */
+ 
+       width: 150px;
+       height: 150px;
+       object-fit: cover;
+       margin-bottom: 15px;
+       transition: all 0.3s ease; /* smooth transition */
+    }
+
+     .team-member img:hover {
+      border-radius: 0; /* hover par square */
+    
+    }
+
+
+    .team-member h5 {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .team-member p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    /* FEATURE BOXES */
+    .features {
+      padding: 60px 15px;
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
+    }
+
+    .feature-box {
+      padding: 30px 15px;
+      border-radius: 15px;
+      background-color: #222;
+      transition: transform 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-box i {
+      font-size: 2.5rem;
+      color: #5c0606;
+      margin-bottom: 15px;
+    }
+
+    .feature-box h5 {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    #para{
+        color: #ccc;               
+
+         font-weight: bold;
+        animation: darken 5s ease forwards;
+    }
+
+    @keyframes darken {
+  from { color: black }
+  to   { color: white; }      
+   }  
+
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+      .hero-about h1{
+        font-size: 2rem;
+      }
+      .hero-about p{
+        font-size: 1rem;
+      }
+    }
+     </style>
+</head>
+<body>
+  
+
+  <section class="main-bg">
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg custom-nav">
+      <div class="container-fluid">
+    <a class="navbar-brand text-white fw-bold fs-3" href="#">
+  Shrek-Juices
+</a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#shrekNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-end" id="shrekNav">
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item"><a class="nav-link hh fw-bold" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="feeedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  
+
+
+
+
+<section class="about-section">
+  <div class="container">
+    <h2>Our Story</h2>
+    <p id="para">
+      At <b>Shrek Juices</b>, our journey began with a simple idea – to bring <b>Fresh, Healthy, and Delicious juices & Shakes</b> to everyone in our community. 
+      We wanted a place where every sip not only tastes amazing but also nourishes the body. With a passion for natural flavors and wholesome ingredients, 
+      we set out to create drinks that are both refreshing and good for your health.
+    </p>
+    <p id="para">
+      Over the years, we have carefully curated a menu of signature fruit juices, protein-packed shakes, and detox blends that cater to every taste and lifestyle. 
+      Every ingredient is hand-picked for quality, and every recipe is crafted with love and care. From seasonal fruits to unique flavor combinations, 
+      we are always exploring ways to make your drink experience exciting and satisfying.
+    </p>
+    <p id="para">
+      At Shrek Juices, our mission is simple – to provide <b>Freshness, Health, and Happiness</b> in every cup. 
+      Whether you are grabbing a quick juice on the go or enjoying a relaxing shake at home, we want every sip to feel like a refreshing boost for your day. 
+      Join us in celebrating the goodness of natural ingredients, the joy of flavor, and the happiness of feeling healthy and energized.
+    </p>
+  </div>
+</section>
+
+<!-- ===== TEAM SECTION ===== -->
+<section class="about-section">
+  <div class="container">
+    <h2>Meet the Team</h2>
+    <div class="row justify-content-center mt-4 g-4">
+      <div class="col-lg-3 col-md-4 col-sm-6 team-member text-center">
+        <img src="images/hassan.jpeg" alt="Founder">
+        <h5>Mr.Muhammad Hassan</h5>
+        <p>frontend Web Developer</p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 team-member text-center">
+        <img src="images/kulsum.jpeg" alt="Chef">
+        <h5>Kulsoom</h5>
+        <p>frontend Web Developer</p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 team-member text-center">
+        <img src="images/uzair.jpeg" alt="Manager">
+        <h5>Uzair</h5>
+        <p>frontend Web Developer</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="features">
+  <div class="container">
+    <h2>Why Choose Shrek Juices?</h2>
+    <div class="row mt-4 g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <i class="fas fa-apple-alt"></i>
+          <h5>Fresh Ingredients</h5>
+          <p>Only the freshest fruits and vegetables go into every juice and shake.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <i class="fas fa-heart"></i>
+          <h5>Healthy & Natural</h5>
+          <p>Packed with vitamins, nutrients, and natural flavors for a healthy boost.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <i class="fas fa-bolt"></i>
+          <h5>Fast Delivery</h5>
+          <p>Get your favorite juices and shakes delivered fresh, fast, and hassle-free.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <i class="fas fa-smile"></i>
+          <h5>Customer Happiness</h5>
+          <p>We strive to make every sip enjoyable and every customer smile.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+
+<div id="backToTop">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer>  
+  <div class="copyright">
+      <p>&copy; 2025 Shrek Juice Centre. All rights reserved. | Website designed for renovation project</p>
+  </div>
+</footer>
+<script>  const backToTop = document.getElementById("backToTop");
+
+  // Scroll karne pe show/hide
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 200){
+      backToTop.style.opacity = "1";
+      backToTop.style.pointerEvents = "auto";
+    } else {
+      backToTop.style.opacity = "0";
+      backToTop.style.pointerEvents = "none";
+    }
+  });
+
+  // Click karne pe scroll top
+  backToTop.addEventListener("click", function(){
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+  // Page loader
+window.addEventListener("load", function(){
+  setTimeout(() => { // optional delay
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }, 1000); // 1 second delay
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

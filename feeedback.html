@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback - Shrek Juice Centre</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ===== RESPONSIVE ORDER FIX (ONLY MOBILE/TABLET) ===== */
+
+@media (max-width: 768px){
+
+  .feedback-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback-form{
+    order: 1;   /* pehle aayega */
+  }
+
+  .feedback-info{
+    order: 2;   /* baad me aayega */
+  }
+
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR (UNCHANGED) ===== -->
+<nav class="navbar navbar-expand-lg custom-nav">
+  <div class="container-fluid">
+   <a class="navbar-brand text-white fw-bold fs-3 d-flex align-items-center gap-2" href="#">
+<a class="navbar-brand text-white fw-bold fs-3" href="#">
+  Shrek-Juices
+</a>
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#shrekNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="shrekNav">
+      <ul class="navbar-nav gap-2">
+         <li class="nav-item"><a class="nav-link hh fw-bold" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="feeedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main>
+<div class="feedback-container">
+
+<!-- FORM -->
+<section class="feedback-form">
+<h2>Send Us Your Feedback</h2>
+
+<form id="feedbackForm">
+
+<div class="form-group">
+<label>Full Name *</label>
+<input type="text" class="form-control" placeholder="Enter Your Name ">
+</div>
+
+<div class="form-group">
+<label>Email *</label>
+<input type="email" class="form-control" placeholder="Please Enter Your Email" required>
+</div>
+
+<div class="form-group">
+<label>Phone</label>
+<input type="tel" class="form-control" placeholder="Enter Your Phone Number">
+</div>
+
+<div class="form-group">
+<label>Feedback Type *</label>
+<select class="form-control" required>
+<option disabled selected>Select type</option>
+<option>🥤 Product</option>
+<option>👩‍💼 Service</option>
+<option>💻 Website</option>
+<option>💡 Suggestion</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Rating *</label>
+<div class="rating-container">
+<label class="rating-option"><input type="radio" name="r" required><div class="rating-icon">☹️</div></label>
+<label class="rating-option"><input type="radio" name="r"><div class="rating-icon">😐</div></label>
+<label class="rating-option"><input type="radio" name="r"><div class="rating-icon">🙂</div></label>
+<label class="rating-option"><input type="radio" name="r"><div class="rating-icon">😍</div></label>
+</div>
+</div>
+
+<div class="form-group">
+<label>Your Feedback *</label>
+<textarea class="form-control" required></textarea>
+</div>
+
+<div class="form-group">
+<label><input type="checkbox" required> I agree to terms</label>
+</div>
+
+<button class="submit-btn" id="buttin">
+<i class="fas fa-paper-plane"></i> Submit Feedback
+</button>
+
+<div class="success-message" id="successMessage">
+<b>Thank you!</b> Your feedback has been submitted.
+</div>
+
+</form>
+</section>
+
+<!-- INFO -->
+<section class="feedback-info">
+  <h2>Why Your Feedback Matters</h2>
+
+  <div class="info-box">
+    <h3><i class="fas fa-heart"></i> We Value Your Opinion</h3>
+    <p>Your feedback helps us improve juice quality, service, and overall experience.</p>
+  </div>
+
+  <div class="info-box">
+    <h3><i class="fas fa-gift"></i> Feedback Rewards</h3>
+    <p>Submit feedback to get discount coupons and special offers.</p>
+  </div>
+
+  <div class="info-box">
+    <h3><i class="fas fa-bolt"></i> Quick Response</h3>
+    <p>We aim to respond to all feedback within 24 hours.</p>
+  </div>
+
+  <div class="info-box">
+    <h3><i class="fas fa-lightbulb"></i> Suggestions Welcome</h3>
+    <p>Your ideas help us create new juices and improve our services.</p>
+  </div>
+</section>
+</main>
+<!-- Back to Top Button -->
+<div id="backToTop">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+<!-- ===== FOOTER (FIXED POSITION) ===== -->
+<footer>
+  <div class="copyright">
+    <p>&copy; 2025 Shrek Juice Centre. All rights reserved. | Website designed for renovation project</p>
+  </div>
+</footer>
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<script>
+  document.getElementById('buttin').addEventListener("click",function(){
+    alert("Thank you  😊 \n For Your Feedback. Have a nice day.")
+  });
+  
+
+  const backToTop = document.getElementById("backToTop");
+
+  // Scroll karne pe show/hide
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 200){
+      backToTop.style.opacity = "1";
+      backToTop.style.pointerEvents = "auto";
+    } else {
+      backToTop.style.opacity = "0";
+      backToTop.style.pointerEvents = "none";
+    }
+  });
+
+  // Click karne pe scroll top
+  backToTop.addEventListener("click", function(){
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+  // Page loader
+window.addEventListener("load", function(){
+  setTimeout(() => { // optional delay
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }, 1000); // 1 second delay
+});
+
+</script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

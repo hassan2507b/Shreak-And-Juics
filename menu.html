@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrek-Juices</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <style>
+      body{
+        background-color: black;
+      }
+     #img{
+      height: 550px;
+     }
+     .modal-body{
+  background:#5c0606;
+  
+     }
+    .modal-header {
+      background-color: #f56a75;
+    }
+    .modal-footer{
+      background-color: #f56a75;
+    }
+     </style>
+</head>
+<body>
+    
+
+
+<!-- ===== BACKGROUND SECTION ===== -->
+<section class="main-bg">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg custom-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold fs-3" href="#">
+  Shrek-Juices
+</a>
+
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#shrekNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="shrekNav">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="feeedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link hh fw-bold" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+
+</section>
+
+
+
+
+
+<!-- ===== CAROUSEL ===== -->
+<div id="juiceCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#juiceCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#juiceCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#juiceCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/layers-berry-chia-seed-smoothies-colorful-healthy.jpg" class="d-block w-100 carousel-img" alt="Orange Juice" id="img">
+      <div class="carousel-caption d-none d-md-block">
+        <h3><b>Sweet Ice Cream Shakes</b></h3>
+        <h5><i>Different Vitamin boost for your day!</i></h5>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/front-view-immunity-boosting-foods-with-citrus-ginger.jpg" class="d-block w-100 carousel-img" id="img" alt="Mango Juice">
+      <div class="carousel-caption d-none d-md-block">
+        <h3><b>Sweet Shake</b></h3>
+        <h5><i>Rich, creamy, and delicious.</i></h5>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/high-angle-milkshake-glasses-tray-with-mint-copy-space.jpg" id="img" class="d-block w-100 carousel-img" alt="Strawberry Juice">
+      <div class="carousel-caption d-none d-md-block">
+        <h3><b>Chochlaty shaks</b></h3>
+      <h5><i>Fresh & refreshing summer taste!</i></h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#juiceCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#juiceCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+
+
+<!-- ===== JUICES CATEGORY ===== -->
+<div class="container mt-5">
+  <h2 class="text-white fw-bold mb-4">🍹 Fresh Juices</h2>
+  <div class="row g-4">
+
+    <!-- Orange Juice -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="menu-card text-center">
+    <img src="images/Ornge.jpg" alt="Orange Juice">
+    <h5>Orange Juice</h5>
+    <p>Small: Rs 200 | Large: Rs 300</p>
+    <a href="#" class="btn mt-2 btn btn-danger " data-bs-toggle="modal" data-bs-target="#ORANGE">Buy Now</a>
+  </div>
+</div>
+
+
+    <!-- Apple Juice -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/apple Juics.jpg" alt="Apple Juice">
+        <h5>Apple Juice</h5>
+        <p>Small: Rs 200 | Large: Rs 300</p>
+            <a href="#" class="btn mt-2  btn btn-danger"  data-bs-toggle="modal" data-bs-target="#APPLE">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Mango Juice -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/mango.jpg" alt="Mango Juice">
+        <h5>Mango Juice</h5>
+        <p>Small: Rs 200 | Large: Rs 300</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#MANGO">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Pineapple Juice -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/pinapple.jpg" alt="Pineapple Juice">
+        <h5>Pineapple Juice</h5>
+        <p>Small: Rs 200 | Large: Rs 300</p>
+            <a href="#" class="btn mt-2 btn btn-danger"   data-bs-toggle="modal" data-bs-target="#PINAPPLE">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Watermelon Juice -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/watermasalon.jpeg" alt="Watermelon Juice">
+        <h5>Watermelon Juice</h5>
+        <p>Small: Rs 200 | Large: Rs 300</p>
+        <a href="#" class="btn mt-2 btn btn-danger"   data-bs-toggle="modal" data-bs-target="#WATERMALON">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Pomegranate -->
+     <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/Pomegranate.jpeg" alt="POMEGRANATE">
+        <h5>Pomegranate</h5>
+        <p>Small: Rs 200 | Large: Rs 300</p>
+            <a href="#" class="btn mt-2 btn btn-danger"   data-bs-toggle="modal" data-bs-target="#POMEGRANATE">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Strawberry -->
+     <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/stawberry.jpg" alt="Watermelon Juice">
+        <h5>Strawberry</h5>
+        <p>Small: Rs 200 | Large: Rs 300</p>
+            <a href="#" class="btn mt-2 btn btn-danger"   data-bs-toggle="modal" data-bs-target="#STAWBERRY">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Graps -->
+     <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/graps.jpeg" alt="Watermelon Juice">
+        <h5>Graps</h5>
+        <p>Small: Rs 200 | Large: Rs 300</p>
+            <a href="#" class="btn mt- btn btn-danger"   data-bs-toggle="modal" data-bs-target="#GRAPS">Buy Now</a>
+      </div>
+    </div>
+
+    
+
+  </div>
+</div>
+
+<!-- ===== SHAKES CATEGORY ===== -->
+<div class="container mt-5">
+  <h2 class="text-white fw-bold mb-4">🥤 Shakes</h2>
+  <div class="row g-4">
+
+    <!-- Banana Shake -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/banana.jpeg" alt="Banana Shake">
+        <h5>Banana Shake</h5>
+        <p>Small: Rs 300 | Large: Rs 450</p>
+            <a href="#" class="btn mt-2 btn btn-danger"   data-bs-toggle="modal" data-bs-target="#BANANA">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Mango Shake -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/mango shaek.jpeg" alt="Mango Shake">
+        <h5>Mango Shake</h5>
+        <p>Small: Rs 300 | Large: Rs 450</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#MANGe">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Chocolate Shake -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/chochate shake.jpeg" alt="Chocolate Shake">
+        <h5>Chocolate Shake</h5>
+        <p>Small: Rs 300 | Large: Rs 450</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#CHOCLATESK">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Strawberry Shake -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/shake pinaple.jpeg" alt="Strawberry Shake">
+        <h5>Strawberry Shake</h5>
+        <p>Small: Rs 300 | Large: Rs 450</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#STAWBERRYSK">Buy Now</a>
+      </div>
+    </div>
+<!-- ABC -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/abc.jpg" alt="Strawberry Shake">
+        <h5>ABC Shake</h5>
+        <p>Small: Rs 300 | Large: Rs 450</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#ABCSK">Buy Now</a>
+      </div>
+    </div>
+<!-- Vanilla -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/vanilla.jpg" alt="Strawberry Shake">
+        <h5>Vanilla Shake</h5>
+        <p>Small: Rs 300 | Large: Rs 450</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#VANILLASK">Buy Now</a>
+      </div>
+    </div>
+<!-- PROTEN -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/protien.jpg" alt="Strawberry Shake">
+        <h5>Protein Shake</h5>
+        <p>Small: Rs 300 | Large: Rs 450</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#PROTENSK">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/oreo.jpg" alt="Strawberry Shake">
+        <h5>Oreo Shake</h5>
+        <p>Small: Rs 300 | Large: Rs 450</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#OREOSK">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- vegetable juics -->
+<div class="container mt-5">
+  <h2 class="text-white fw-bold mb-4">🥤 Vegetable juics</h2>
+  <div class="row g-4">
+
+
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/detox.jpg" alt="Strawberry Shake">
+        <h5>Detox Water</h5>
+        <p>Small: Rs 180 | Large: Rs 280</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#DETOXV">Buy Now</a>
+      </div>
+
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/lemon.jpg" alt="Strawberry Shake">
+        <h5>Lemon Juice</h5>
+        <p>Small: Rs 180 | Large: Rs 280</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#LEMONV">Buy Now</a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/karela.jpg" alt="Strawberry Shake">
+        <h5>Bitter Gourd Juice</h5>
+        <p>Small: Rs 180 | Large: Rs 280</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#BITTERV">Buy Now</a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/beetroot.jpg" alt="Strawberry Shake">
+        <h5>Beetroot Juice</h5>
+        <p>Small: Rs 180 | Large: Rs 280</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#BEETROOTV">Buy Now</a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/carrot.jpg" alt="Strawberry Shake">
+        <h5>Carrot Juice</h5>
+        <p>Small: Rs 180 | Large: Rs 280</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#CARROTV">Buy Now</a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/cocumber.jpg" alt="Strawberry Shake">
+        <h5>Cucumber Juice</h5>
+        <p>Small: Rs 180 | Large: Rs 280</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#CUCUMBERV">Buy Now</a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/mint.jpg" alt="Strawberry Shake">
+        <h5>Mint & Lemon Juice</h5>
+        <p>Small: Rs 180 | Large: Rs 280</p>
+            <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#MINTV">Buy Now</a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="menu-card text-center">
+        <img src="images/spincah.jpg" alt="Strawberry Shake">
+        <h5>Spinach Juice</h5>
+        <p>Small: Rs 180 | Large: Rs 280</p>
+        <a href="#" class="btn mt-2 btn btn-danger"  data-bs-toggle="modal" data-bs-target="#SPINACHV">Buy Now</a>
+      </div>
+      </div>
+     </div>
+</div>
+<div id="juiceCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+          <h2 class="fw-bold mb-3" id="falooda">Our Signature Falooda</h2>
+      <img src="images/falooda.jpg" class="d-block w-100 carousel-img" alt="Falooda" id="img">
+    </div>
+  
+
+  </div>
+
+<div class="text-center mt-3">
+  <a href="#orderSection" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#Falooda">Order Now</a>
+</div>
+
+<section class="menu-info py-5  text-center text-light">
+  <div class="container">
+    <h2 class="fw-bold mb-3" id="admin">Fresh & Healthy Juices and Shakes</h2>
+    <p class="lead mb-0 " id="para">
+      At Shrek Juices, we craft every shake and juice using the freshest fruits and vegetables. 
+      Our drinks are packed with natural flavors, essential vitamins, and nutrients. 
+      Enjoy a refreshing boost anytime, whether it’s a quick snack or a healthy treat. 
+      We believe in delivering taste, health, and happiness in every sip. 
+      Experience freshness like never before with Shrek Juices!
+    </p>
+  </div>
+</section>
+
+    <!-- faloda -->
+<div class="modal fade " id="Falooda" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header ">
+        <h5 class="modal-title text-dark bg" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Our Signature Falooda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      
+
+      <div class="modal-body text-center">
+        <img src="images/falooda.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">  <br> Small: Rs 1200 | Large: Rs 2000</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ORANGE -->
+<div class="modal fade" id="ORANGE" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- HEADER -->
+      <div class="modal-header ">
+        <h5 class="modal-title text-white" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          Orange Juice
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body text-center">
+        <img src="images/Ornge.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">
+          Fresh orange juice 🍊 <br>
+          Small: Rs 200 | Large: Rs 300
+        </p>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- APPLE -->
+<div class="modal fade" id="APPLE" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Apple Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/apple Juics.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Apple Juice <br> Small: Rs 200 | Large: Rs 300</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MANGO -->
+<div class="modal fade" id="MANGO" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Mango Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/mango.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Mango juice 🍊 <br> Small: Rs 200 | Large: Rs 300</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- PINAPPLE -->
+<div class="modal fade" id="PINAPPLE" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Pinapple</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/pinapple.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Pinapple <br> Small: Rs 200 | Large: Rs 300</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- WATERMELON -->
+<div class="modal fade" id="WATERMALON" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Watermelon Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/watermasalon.jpeg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Watermelon juice 🍊 <br> Small: Rs 200 | Large: Rs 300</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Pomegranate -->
+<div class="modal fade" id="POMEGRANATE" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Pomegranate Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/Pomegranate.jpeg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Pomegranate juice 🍊 <br> Small: Rs 200 | Large: Rs 300</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- STAWBERRY -->
+<div class="modal fade" id="STAWBERRY" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Stawberry Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/stawberry.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Stawberry juice 🍊 <br> Small: Rs 200 | Large: Rs 300</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- GRAPS -->
+<div class="modal fade" id="GRAPS" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Graps Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/graps.jpeg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Graps Juice <br> Small: Rs 200 | Large: Rs 300</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-danger">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- BANANA SHAKE -->
+<div class="modal fade" id="BANANA" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Banana Shake</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/banana.jpeg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Banana Shake <br> Small: Rs 300 | Large: Rs 450</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MANGO SHAKE -->
+<div class="modal fade" id="MANGe" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Mango Shake</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/mango shaek.jpeg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Mango Shake <br> Small: Rs 300 | Large: Rs 450</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div><!-- CHOCOLATE SHAKE -->
+<div class="modal fade" id="CHOCLATESK" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Chocolate Shake</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/chochate shake.jpeg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Chocolate Shake<br> Small: Rs 300 | Large: Rs 450</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- STRAWBERRY SHAKE -->
+<div class="modal fade" id="STAWBERRYSK" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Strawberry Shake</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/shake pinaple.jpeg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Strawberry Shake<br> Small: Rs 300 | Large: Rs 450</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ABC SHAKE -->
+<div class="modal fade" id="ABCSK" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">ABC Shake</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/abc.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh ABC Shake<br> Small: Rs 300 | Large: Rs 450</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- VANILLA SHAKE -->
+<div class="modal fade" id="VANILLASK" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Vanilla Shake</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/vanilla.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Vanilla Shake<br> Small: Rs 300 | Large: Rs 450</p>
+      </div>
+
+      <div class="modal-footer">
+     <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- PROTEIN SHAKE -->
+<div class="modal fade" id="PROTENSK" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Protein Shake</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/protien.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Protein Shake<br> Small: Rs 300 | Large: Rs 450</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- OREO SHAKE -->
+<div class="modal fade" id="OREOSK" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Oreo Shake</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/oreo.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Oreo Shake<br> Small: Rs 300 | Large: Rs 450</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- DETOX WATER -->
+<div class="modal fade" id="DETOXV" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Detox Water</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/detox.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Detox Water<br> Small: Rs 180 | Large: Rs 280</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- LEMON JUICE -->
+<div class="modal fade" id="LEMONV" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Lemon Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/lemon.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Lemon Juice<br> Small: Rs 180 | Large: Rs 280</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BITTER GOURD JUICE -->
+<div class="modal fade" id="BITTERV" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Bitter Gourd Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/karela.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Bitter Gourd Juice<br> Small: Rs 180 | Large: Rs 280</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- BEETROOT JUICE -->
+<div class="modal fade" id="BEETROOTV" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Beetroot Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/beetroot.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Beetroot Juice<br> Small: Rs 180 | Large: Rs 280</p>
+      </div>
+
+  <div class="modal-footer">
+     <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARROT JUICE -->
+<div class="modal fade" id="CARROTV" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Carrot Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/carrot.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Carrot Juice<br> Small: Rs 180 | Large: Rs 280</p>
+      </div>
+
+        <div class="modal-footer">
+     <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- MINT & LEMON JUICE -->
+<div class="modal fade" id="MINTV" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Mint & Lemon Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/mint.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Mint & Lemon Juice<br> Small: Rs 180 | Large: Rs 280</p>
+      </div>
+
+        <div class="modal-footer">
+     <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- SPINACH JUICE -->
+<div class="modal fade" id="SPINACHV" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Spinach Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/spincah.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Spinach Juice<br> Small: Rs 180 | Large: Rs 280</p>
+      </div>
+
+      <div class="modal-footer">
+     <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- CUCUMBER JUICE -->
+<div class="modal fade" id="CUCUMBERV" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title text-dark">Cucumber Juice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/cocumber.jpg" class="img-fluid rounded mb-3" style="max-height:220px;">
+        <p class="text-light">Fresh Cucumber Juice<br> Small: Rs 180 | Large: Rs 280</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+   <button class="btn btn-danger confirmOrderBtn">Confirm Order</button>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div id="backToTop">
+  <i class="fas fa-arrow-up"></i>
+</div>
+<footer>      
+  <div class="copyright">
+      <p>&copy; 2025 Shrek Juice Centre. All rights reserved. | Website designed for renovation project</p>
+  </div>
+</footer>
+
+
+
+<!-- Owner Modal -->
+<div class="modal fade" id="ownerModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-danger">
+        <h5 class="modal-title text-white">Choose Owner to Contact</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="ownerContainer" class="d-flex justify-content-center gap-4 flex-wrap"></div>
+        <!-- Confirm Button -->
+        <button id="confirmOrderBtnModal" class="btn btn-success mt-3">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+
+
+
+<script>
+// ===== OWNERS DATA =====
+const owners = [
+  { name: "Hassan", number: "3422004590", img: "images/hassan.jpeg" },
+  { name: "Kulsoom", number: "3102736550", img: "images/kulsum.jpeg" },
+  { name: "Uzair", number: "923257664947", img: "images/uzair.jpeg" }
+];
+
+// ===== OWNER MODAL HTML =====
+const ownerModalHTML = `
+<div class="modal fade" id="ownerModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-danger">
+        <h5 class="modal-title text-white">Choose Owner</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div id="ownerContainer" class="d-flex justify-content-center gap-4 flex-wrap"></div>
+        <button id="confirmOrderBtnModal" class="btn btn-success mt-3">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>`;
+document.body.insertAdjacentHTML('beforeend', ownerModalHTML);
+
+// References
+const ownerModalEl = document.getElementById("ownerModal");
+const ownerContainer = document.getElementById("ownerContainer");
+const confirmOrderBtnModal = document.getElementById("confirmOrderBtnModal");
+
+// Function to render owners horizontally with name below image and checkbox below name
+function renderOwners() {
+  ownerContainer.innerHTML = ""; // clear previous
+
+  owners.forEach((owner, index) => {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("d-flex", "flex-column", "align-items-center");
+
+    // Owner Image
+    const img = document.createElement("img");
+    img.src = owner.img;
+    img.style.width = "120px";
+    img.style.height = "120px";
+    img.style.objectFit = "cover";
+    img.style.borderRadius = "15px";
+
+    // Owner Name
+    const name = document.createElement("span");
+    name.textContent = owner.name;
+    name.classList.add("fw-bold", "text-dark", "mt-2");
+
+    // Checkbox
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.name = "ownerCheckbox"; // same name for single selection
+    checkbox.style.marginTop = "5px";
+
+    // Only allow one checkbox checked at a time
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        document.querySelectorAll('input[name="ownerCheckbox"]').forEach(cb => {
+          if (cb !== checkbox) cb.checked = false;
+        });
+      }
+    });
+
+    wrapper.appendChild(img);
+    wrapper.appendChild(name);
+    wrapper.appendChild(checkbox);
+
+    ownerContainer.appendChild(wrapper);
+  });
+}
+
+// ===== EVENT DELEGATION FOR ALL CONFIRM BUTTONS =====
+document.addEventListener("click", function(e) {
+  if (e.target.closest(".confirmOrderBtn")) {
+    renderOwners();
+    const ownerModal = new bootstrap.Modal(ownerModalEl);
+    ownerModal.show();
+  }
+});
+
+// Confirm Order button inside modal → open WhatsApp for selected owner
+confirmOrderBtnModal.addEventListener("click", () => {
+  const checkboxes = document.querySelectorAll('input[name="ownerCheckbox"]');
+  let selectedOwner = null;
+
+  checkboxes.forEach((cb, index) => {
+    if (cb.checked) selectedOwner = owners[index];
+  });
+
+  if (selectedOwner) {
+    const msg = "Hello! I want to contact you regarding Shrek Juices.";
+    window.open(`https://wa.me/${selectedOwner.number}?text=${encodeURIComponent(msg)}`, "_blank");
+  } else {
+    alert("Please select an owner before confirming!");
+  }
+});
+ const backToTop = document.getElementById("backToTop");
+
+  // Scroll karne pe show/hide
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 200){
+      backToTop.style.opacity = "1";
+      backToTop.style.pointerEvents = "auto";
+    } else {
+      backToTop.style.opacity = "0";
+      backToTop.style.pointerEvents = "none";
+    }
+  });
+
+  // Click karne pe scroll top
+  backToTop.addEventListener("click", function(){
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+  // Page loader
+window.addEventListener("load", function(){
+  setTimeout(() => { // optional delay
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }, 1000); // 1 second delay
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
