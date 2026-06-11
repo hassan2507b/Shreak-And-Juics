@@ -215,11 +215,6 @@
   </div>
 </footer>
 
-<!-- Loader -->
-<div id="loader">
-  <div class="spinner"></div>
-</div>
-
 
 <script>
     document.getElementById("buttton").addEventListener("click",function(){
@@ -247,13 +242,7 @@
       behavior: "smooth"
     });
   });
-// Page loader
-window.addEventListener("load", function(){
-  setTimeout(() => { // optional delay
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("content").style.display = "block";
-  }, 1000); // 1 second delay
-});
+
 </script>
 
 
